@@ -44,13 +44,13 @@ int main() {
     double u[NX];
     double u_new[NX];
 
-    /* Initial condition u(x,0) = sin(pi x) */
+    
     for (int i = 0; i < NX; i++) {
         double x = i * dx;
         u[i] = sin(M_PI * x);
     }
 
-    /* Crank–Nicolson coefficients */
+    /* Crankï¿½Nicolson coefficients */
     double a[NX - 2], b[NX - 2], c[NX - 2];
 
     for (int i = 0; i < NX - 2; i++) {
